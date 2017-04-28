@@ -103,7 +103,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'concat', 'uglify'
+    'concat', 'uglify', 'upload'
   ]);
 
   grunt.registerTask('upload', function(n) {
@@ -123,6 +123,4 @@ module.exports = function(grunt) {
   grunt.registerTask('start', [
     'nodemon'
     ])
-
-
 };
